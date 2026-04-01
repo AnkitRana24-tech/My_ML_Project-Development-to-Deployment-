@@ -88,18 +88,22 @@ Example:
 ## Prerequisites
 Before running or deploying this project, ensure the following tools and accounts are available:    
 
-**Development Environment**
+**Development Environment**   
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 - **Python 3.8 or higher**
 - **Jupyter Notebook / JupyterLab**
   - Used for data exploration, model training, and experimentation
 - **pip** (Python package manager)
 
-**Containerization**
+**Containerization**   
+![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 - **Docker**
   - Required to build and run the application container locally
   - Docker Desktop recommended for Windows/macOS
 
-**Cloud Platform**
+**Cloud Platform**   
+![Azure](https://img.shields.io/badge/Microsoft%20Azure-Cloud-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
 - **Microsoft Azure Account**
   - Used for deploying the containerized ML application
   - Access to one of the following services:
@@ -107,7 +111,8 @@ Before running or deploying this project, ensure the following tools and account
     - Azure App Service (Container) **or**
     - Azure Kubernetes Service (AKS)
 
-**Testing & Validation**
+**Testing & Validation**   
+![Postman](https://img.shields.io/badge/Postman-API%20Testing-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 - **Postman**
   - Used to test REST API endpoints after deployment
   - Validate request/response payloads for model predictions
