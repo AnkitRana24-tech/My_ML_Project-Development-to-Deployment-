@@ -44,6 +44,7 @@ _Run Container:_ docker run -p 80:80 my_project_image
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
 - [Examples](#examples)
+- [Architecture](#architecture)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
