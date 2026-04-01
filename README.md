@@ -123,3 +123,33 @@ Before running or deploying this project, ensure the following tools and account
   - Version control and collaboration
 - **Azure CLI**
   - For local authentication and deployment automation
+
+## Usage   
+
+This project demonstrates an end-to-end machine learning workflow, from model development to cloud deployment and API-based inference.   
+
+**1. Model Development & Training**
+- The machine learning model is developed and trained using **Python** and **Jupyter Notebook**.
+- Data exploration, preprocessing, and model training are performed locally.
+- After training, the model is serialized and saved as a file (`iris_model.pkl`) for reuse during inference.
+
+**2. Running the Application Locally (Docker)**
+- The trained model is served through a REST API using a Python-based service.
+- The application is containerized using **Docker** to ensure consistency across environments.
+- The Docker container runs the inference service and exposes an API endpoint for predictions.
+
+**3. Cloud Deployment on Azure**
+- The Docker image is deployed to **Microsoft Azure** using container-based services.
+- Azure hosts the application and exposes a public endpoint for accessing the prediction API.
+- This enables scalable, cloud-ready access to the machine learning model.
+
+**4. Testing the Deployment**
+- **Postman** is used to test the deployed REST API.
+- Requests are sent with feature values as input, and the API returns prediction results.
+- This validates both the deployment and the model inference pipeline.
+
+**5. Typical Workflow**
+1. Train the model using Jupyter Notebook
+2. Package the inference service using Docker
+3. Deploy the container to Azure
+4. Test API endpoints using Postman
