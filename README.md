@@ -84,3 +84,36 @@ Example:
 -requirements.txt for reproducible environment.    
 -Sample requests tested with Postman.    
 -Dataset included: IRIS.csv and serialized model iris_model.pkl.
+
+## Prerequisites
+Before running or deploying this project, ensure the following tools and accounts are available:    
+
+**Development Environment**
+- **Python 3.8 or higher**
+- **Jupyter Notebook / JupyterLab**
+  - Used for data exploration, model training, and experimentation
+- **pip** (Python package manager)
+
+**Containerization**
+- **Docker**
+  - Required to build and run the application container locally
+  - Docker Desktop recommended for Windows/macOS
+
+**Cloud Platform**
+- **Microsoft Azure Account**
+  - Used for deploying the containerized ML application
+  - Access to one of the following services:
+    - Azure Container Instances (ACI) **or**
+    - Azure App Service (Container) **or**
+    - Azure Kubernetes Service (AKS)
+
+**Testing & Validation**
+- **Postman**
+  - Used to test REST API endpoints after deployment
+  - Validate request/response payloads for model predictions
+
+**Optional (Recommended)**
+- **Git**
+  - Version control and collaboration
+- **Azure CLI**
+  - For local authentication and deployment automation
