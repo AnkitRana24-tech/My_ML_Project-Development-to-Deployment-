@@ -218,3 +218,53 @@ serve_model.py
 iris_model.pkl   
       ↓   
 Prediction Response   
+
+## Testing
+
+Testing for this project focuses on validating the machine learning inference API after local and cloud deployment.   
+
+**1. API Testing with Postman**   
+- **Postman** is used to test the REST API endpoints exposed by the application.   
+- Requests are sent to the `/predict` endpoint with input feature values in JSON format.   
+- Responses are verified to ensure correct predictions and proper API behavior.      
+
+**Test Coverage Includes:**   
+- Successful prediction requests      
+- Correct response format (JSON)   
+- Model loading and inference validation   
+- Endpoint accessibility after deployment   
+
+---
+
+**2. Local Testing (Docker)**   
+- The Docker container is run locally to verify:   
+  - Successful container startup     
+  - Model loading from the serialized file   
+  - API endpoint availability   
+- Local testing ensures the container behaves consistently before cloud deployment.   
+
+---
+
+**3. Cloud Testing (Azure Deployment)**   
+- After deploying the container to **Microsoft Azure**, the public endpoint is tested using Postman.   
+- Validates:     
+  - Cloud connectivity    
+  - Deployment configuration   
+  - End-to-end inference flow   
+- Confirms that the application behaves the same in the cloud as it does locally.   
+
+---
+
+**4. Sample Test Scenario**   
+- Send a POST request with valid feature values   
+- Receive a predicted iris species as output   
+- Verify HTTP status codes and response payload   
+
+---
+
+**5. Testing Outcome**   
+- The application successfully processes input data and returns predictions.    
+- REST API remains stable across local and Azure environments.   
+- Deployment is verified as production-ready for inference usage.
+
+
