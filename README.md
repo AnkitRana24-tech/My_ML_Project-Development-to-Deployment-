@@ -174,3 +174,47 @@ json
   "prediction": "Iris-setosa"   
 }   
 
+## Architecture
+**Model Serving Architecture (Inference Phase)**   
+  **1.Typical Flow:**   
+HTTP Request   
+        ↓   
+serve_model.py   
+        ↓   
+iris_model.pkl   
+        ↓   
+Prediction Response   
+
+**Containerization Architecture (Docker)**   
+  **1.Logical Build Flow:**   
+Base Python Image   
+         ↓   
+Install requirements.txt   
+         ↓   
+Copy serve_model.py,
+Copy iris_model.pkl   
+         ↓   
+Expose Port (e.g. 5000 / 8000 / 80)   
+         ↓   
+Start API Server   
+
+**End-to-End Flow Summary**   
+   **1.Training Flow (Offline)**   
+IRIS.csv   
+      ↓   
+IrisModel.py   
+      ↓   
+iris_model.pkl   
+
+   **2.Inference Flow (Online)**   
+Client Request   
+      ↓   
+Azure Endpoint   
+      ↓   
+Docker Container   
+      ↓    
+serve_model.py   
+      ↓   
+iris_model.pkl   
+      ↓   
+Prediction Response   
