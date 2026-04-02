@@ -275,3 +275,19 @@ Easy scalability using Azure container services
 Cloud-ready, production-oriented ML deployment   
 Simplified updates by rebuilding and redeploying the container   
 
+## Contributing   
+Contributions are Welcome!   
+1. Fork the repository   
+2. Create a feature branch
+3. Commit changes with clear messages
+4. Open a Pull Request
+
+Please follow the existing code style and add tests where applicable.
+
+## Contact   
+
+**Author:** Ankit Rana   
+**GitHub:** https://github.com/AnkitRana24-tech
+For questions, feedback or collaboration opportunities, feel free to:   
+-Open an issue in this repository   
+-Reach out via GitHub, **E-mail:** ankitsrana0457@gmail.com
