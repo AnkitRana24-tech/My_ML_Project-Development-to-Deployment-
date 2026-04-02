@@ -242,3 +242,40 @@ Testing for this project focuses on validating the machine learning inference AP
 - Deployment is verified as production-ready for inference usage.
 
 
+## Deployment   
+The application is deployed as a containerized machine learning inference service on **Microsoft Azure**, ensuring portability, scalability and consistency across environments.   
+
+**Deployment Overview**    
+- The trained machine learning model is packaged with the inference service using **Docker**.
+- The Docker image is deployed to **Azure** using container-based services.
+- Azure exposes a public endpoint to access the REST API for predictions.
+
+**Deployment Steps:**  
+
+1. **Build Docker Image**   
+The application and model artifacts are packaged into a Docker image using the provided Dockerfile.   
+
+2. **Push Image to Azure**   
+The Docker image is pushed to an Azure-supported container registry (e.g., Azure Container Registry).   
+
+3. **Deploy on Azure**   
+The container image is deployed using one of the following Azure services:   
+Azure Container Instances (ACI)   
+Azure App Service (Container)   
+Azure Kubernetes Service (AKS)   
+
+4. **Expose API Endpoint**   
+Azure assigns a public URL to the deployed container.   
+The inference service becomes accessible via HΤΤΡ.   
+
+**Post-Deployment Validation**   
+The deployed REST API is tested using **Postman**.   
+Requests are sent to the /predict endpoint with input feature values.   
+Successful responses confirm correct deployment and model inference.   
+
+**Deployment Benefits**   
+Consistent runtime across local and cloud environments    
+Easy scalability using Azure container services   
+Cloud-ready, production-oriented ML deployment   
+Simplified updates by rebuilding and redeploying the container   
+
