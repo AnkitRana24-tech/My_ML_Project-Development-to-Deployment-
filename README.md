@@ -7,7 +7,7 @@
 ![Platform](https://img.shields.io/badge/platform-linux%20%7C%20windows%20%7C%20macos-lightgrey?style=flat-square)
 ![Language](https://img.shields.io/badge/language-python-blueviolet?style=flat-square)
 
-> A lightweight Iris classifier that trains a scikit-learn model and serves it via FastAPI inside a Docker container—designed for easy testing, reproducible deployments and seamless pushing to Azure container registries and services.
+> A lightweight Iris classifier that trains a scikit-learn model and serves it via FastAPI inside a Docker container—designed for easy testing, reproducible deployments and seamless pushing to Azure container registries and services
 
 
 ## Table of Contents
