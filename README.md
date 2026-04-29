@@ -54,10 +54,10 @@ Example:
 ## Feature
 -Train and serve a scikit-learn model (Iris dataset)     
 -Serve predictions via FastAPI (serve_model.py)    
--Containerized app with Dockerfile for consistent deployment.    
--requirements.txt for reproducible environment.    
--Sample requests tested with Postman.    
--Dataset included: IRIS.csv and serialized model iris_model.pkl.
+-Containerized app with Dockerfile for consistent deployment    
+-requirements.txt for reproducible environment    
+-Sample requests tested with Postman    
+-Dataset included: IRIS.csv and serialized model iris_model.pkl
 
 ## Prerequisites
 Before running or deploying this project, ensure the following tools and accounts are available:    
